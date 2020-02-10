@@ -1,0 +1,160 @@
+html{
+    box-sizing: border-box;
+}
+*,*::before,*::after{
+    box-sizing: inherit;
+}
+body{
+    margin: 0 auto;
+    font-family: 'Dancing Script', cursive;
+    background-color: rgba(201, 139, 209, 0.472);
+}
+li{
+ list-style: none;
+}
+
+.header{
+    max-width: 1190px;
+    width: 90%;
+    margin: 0 auto;
+    min-height: 100px;
+    padding: 20px;
+    border-bottom: 2px solid rgb(193, 83, 226);
+    margin-bottom: 40px;
+}
+.container{
+    max-width: 1190px;
+    width: 100%;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.header__inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header__menu ul{
+    display: flex;
+    justify-content: space-between;
+    font-weight: 500;
+    font-size: 20px;
+    color: rgb(139, 78, 197);
+}
+.header__menu li+li{
+ margin-left: 30px;
+}
+.header__logo{
+    font-size: 30px;
+    font-weight: 700;
+    color: rgb(132, 20, 236);
+}
+
+.slide-recipe__title{
+    font-size: 35px;
+    font-weight: 700;
+    text-align: center;
+    color: rgba(94, 16, 238, 0.794);
+    margin-bottom: 40px;
+}
+.slide-recipe__content{
+    margin-bottom: 30px;
+    border-bottom: 2px solid rgb(193, 83, 226);
+
+}
+.slide-recipe__slider-cheese, 
+.slide-recipe__sliders-oatmeal, 
+.slide-recipe__slider-egg, 
+.slide-recipe__sliders-other,
+.slide-recipe__sliders-dinner, 
+.slide-recipe__sliders-snack{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 70px;
+    position: relative;
+}
+
+.slick-dots{
+    position: absolute;
+    padding: 0;
+    bottom: -50px;
+    display: flex;
+}
+.slick-dots ul{
+    margin-bottom: 15px;
+}
+.slick-dots button{
+    background-color: rgb(199, 150, 238);
+    border-radius: 50%;
+    font-size: 0;
+    width: 20px;
+    height: 20px;
+    border: 2px solid rgb(24, 43, 216);
+    margin-left: 8px;
+    outline: none;
+    cursor: pointer;
+}
+.slick-dots .slick-active button{
+    background-color: rgba(46, 10, 206, 0.801);
+}
+video{
+    width: 100%;
+    border: 2px solid rgb(199, 150, 238);
+    border-radius: 10px;
+    margin-bottom: 40px;
+}
+
+.slick-slide img {
+    width: 100%;
+    margin: 0 auto;
+}
+.slide-recipe__title{
+    margin-bottom: 30px;
+}
+
+.recommendation__img{
+    margin-bottom: 30px;
+   
+}
+.recommendation__food-inner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.menu-youtube {
+    position: relative;
+    padding-bottom: 75%; /* задаёт высоту контейнера для 16:9 (если 4:3 — поставьте 75%) */
+    height: 0;
+    overflow: hidden;
+    margin-bottom: 30px;
+    margin-top: 20px;
+  }
+  .menu-youtube iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-width: 0;
+    outline-width: 0;
+  }
+
+.menu-week1__inner,
+.menu-week2__inner,
+.menu-week3__inner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.footer__inner{
+    padding: 30px;
+    font-size: 35px;
+    font-weight: 700;
+    color: rgba(46, 10, 206, 0.801);;
+    text-align: center;
+    border-top: 3px solid  rgb(139, 78, 197);;
+}
